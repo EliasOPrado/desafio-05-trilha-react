@@ -1,1 +1,39 @@
-// TODO
+.container {
+  margin: 3rem auto;
+}
+
+.postsContainer {
+  margin-top: 4rem;
+}
+
+.post {
+  max-width: 720px;
+  margin: 0 auto;
+
+  & + .post {
+    margin-top: 3rem;
+  }
+
+  a {
+    font-weight: 700;
+    font-size: 1.75rem;
+    color: var(--title);
+  }
+
+  p {
+    font-size: 1.125rem;
+    line-height: 1.3rem;
+    color: var(--description);
+    margin-top: 0.5rem;
+  }
+}
+
+.loadPostsButton {
+  border: 0;
+  background: transparent;
+  color: var(--pink);
+  margin-top: 4rem;
+
+  font-weight: 600;
+  font-size: 1.125rem;
+}
